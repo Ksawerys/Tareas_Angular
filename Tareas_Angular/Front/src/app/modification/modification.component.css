@@ -1,0 +1,159 @@
+.itinerary {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .itinerary .point {
+    width: 50%;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    transition: 0.3s ease;
+    border: 2px solid transparent;
+  }
+  .itinerary .point:hover {
+    transition: 0.3s ease;
+    box-shadow: 0 0 10px rgb(255, 0, 0);
+    border: 2px solid rgb(255, 0, 0);
+  }
+  .itinerary .point .highlight {
+    color: red;
+  }
+  .itinerary .point .point-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .itinerary .point .point-description, .itinerary .point .point-location, .itinerary .point .point-rating {
+    margin-bottom: 10px;
+  }
+  .itinerary .point .point-comments {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .info {
+    width: 50%;
+    margin: 50px auto;
+  }
+  .info .highlight {
+    color: red;
+  }
+  .info .rating-container {
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+    margin-bottom: 30px;
+  }
+  .info .rating-container .stars-given {
+    color: red;
+    margin-right: 10px;
+  }
+  .info .rating-container .rate-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    padding: 20px;
+    width: 150px;
+    height: 100px;
+    border-radius: 10px;
+  }
+  
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: -10px;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #ff0000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .valoration {
+    margin-top: 20%;
+  }
+  
+  .stars {
+    color: #aaa;
+    cursor: pointer;
+  }
+  
+  .point-location {
+    margin-top: 2%;
+  }
+  
+  #commentForm {
+    justify-content: space-between;
+  }
+  
+  #commentForm input {
+    flex-grow: 1;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  #commentForm {
+    margin-top: 6%;
+  }
+  
+  #commentForm button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .comment {
+    display: flex;
+    align-items: start;
+    margin-bottom: 10px;
+  }
+  
+  .profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .arrow {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-left: 2px solid red;
+    border-bottom: 2px solid red;
+    transform: rotate(-45deg);
+    transition: transform 0.3s ease-in-out;
+  }/*# sourceMappingURL=itinerary.css.map */

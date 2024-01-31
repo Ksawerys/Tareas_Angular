@@ -1,0 +1,56 @@
+<app-header></app-header>
+<ul>
+    @for (task of tasks; track task.id) {
+        <li>{{ task.assignment }}</li>
+        <div class="itinerary">
+        <div class="point" data-point-id="1">
+            <h2 class="point-title"><span class="highlight">{{ task.id }}º</span>Tarea</h2>
+            <p class="point-description">Descripccion:{{ task.description }}</p>
+            <p class="point-description">Dificultad: {{ task.difficulty }}</p>
+            <p class="point-description">Progreso: {{ task.progress }}</p>
+            <p class="point-description">Tiempo estimado: {{ task.time_estimated }}</p>
+            <p class="point-description">Tiempo dedicado: {{ task.time_dedicated }}</p>
+            <p class="point-description">Echo: {{ task.done }}</p>
+            <p class="point-description">Creación: {{ task.createdAt }}</p>
+
+              <div class="comment-form">
+              <form id="commentForm" style="display: flex;">
+                <input type="text" id="comment" name="deja tu comentario" placeholder="Deja tu comentario aquí...">
+                <button type="submit">Enviar</button>
+              </form>
+          
+              <div class="point-comments">
+                <div id="commentsToggle3" class="commentsToggle" style="text-align: center; cursor: pointer;">
+                  <span class="arrow"></span>
+                </div>
+                <div id="commentsContainer3" class="commentsContainer" style="height: 200px; overflow-y: scroll; display: none;">
+                <div class="comment">
+                 
+              </div>
+            </div>
+        
+          </div>
+          </div>
+        </div>
+        </div>
+    }
+    @empty {
+        <li>No tasks</li>
+    }
+</ul>
+
+<div class="area" >
+    <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+    </ul>
+</div >
+  <app-footer></app-footer>

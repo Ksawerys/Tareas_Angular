@@ -1,0 +1,85 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 100px;
+    background-color: #ffffff;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    width: 50%;
+    margin: auto;
+    z-index: 1;
+    margin-top: 1%;
+  }
+  .navbar .logo {
+    font-family: "Dancing Script";
+    font-size: 40px;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    margin-left: 2%;
+  }
+  .navbar .menu-button {
+    display: none;
+  }
+  .navbar .menu {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+  }
+  .navbar .menu li {
+    margin-right: 20px;
+  }
+  .navbar .menu li:last-child {
+    margin-right: 0;
+  }
+  .navbar .menu li #selected {
+    color: rgb(255, 0, 0);
+  }
+  .navbar .menu li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: "Philosopher", sans-serif;
+    border-bottom: solid 3px transparent;
+    transition: 0.4s ease;
+    padding-bottom: 10px;
+  }
+  .navbar .menu li a:hover {
+    color: rgb(255, 0, 0);
+    padding-bottom: 10px;
+    border-bottom: solid 3px rgb(255, 0, 0);
+    transition: 0.2s ease;
+  }
+  
+  @media (min-width: 650px) and (max-width: 1000px) {
+    .navbar {
+      display: flex;
+      width: 80%;
+    }
+    .menu {
+      display: flex;
+    }
+  }
+  @media (max-width: 650px) {
+    .navbar {
+      display: flex;
+      width: 80%;
+    }
+    .navbar .menu {
+      display: block;
+    }
+    .navbar .menu li a {
+      text-decoration: none;
+      font-size: 20px;
+      color: inherit;
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+    .navbar .menu li a:hover {
+      color: red;
+      padding-bottom: 0;
+      border-bottom: 0;
+      transition: none;
+    }
+  }

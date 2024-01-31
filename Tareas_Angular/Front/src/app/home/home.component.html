@@ -1,0 +1,43 @@
+
+<app-header></app-header>
+
+
+<div class="profile-container">
+    <h1>Creación de tareas</h1>
+    <form [formGroup]="form" (ngSubmit)="submitForm()">
+        <label for="description">Description:</label>
+        <input type="text" id="description" formControlName="description">
+        <label for="difficulty">Difficulty:</label>
+        <input type="text" id="difficulty" formControlName="difficulty">
+        <label for="assignment">Assignment:</label>
+        <input type="text" id="assignment" formControlName="assignment">
+        <label for="time_estimated">Time Estimated:</label>
+        <input type="number" id="time_estimated" formControlName="time_estimated">
+        <label for="time_dedicated">Time Dedicated:</label>
+        <input type="number" id="time_dedicated" formControlName="time_dedicated">
+        <label for="progress">Progress:</label>
+        <input type="number" id="progress" formControlName="progress">
+        <label for="done">Done:</label>
+        <input type="checkbox" id="done" formControlName="done">
+        <input type="submit" value="Save Changes">
+    </form>
+</div>
+
+
+<div class="area" >
+    <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+    </ul>
+</div >
+
+<app-footer>
+</app-footer>
